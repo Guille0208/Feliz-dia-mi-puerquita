@@ -32,11 +32,17 @@ body {
 }
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
-  #lyrics {
-      font-size: 14px; /* Reduce el tamaño del texto para dispositivos más pequeños */
-      margin-bottom: 530px;
-      letter-spacing: 3px;
-  }
+#lyrics {
+  font-size: clamp(1rem, 5vw, 1.8rem); 
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: white;
+  position: absolute;
+  margin-bottom: 20%;
+  z-index: 1;
+  font-weight: bold;
+  letter-spacing: clamp(2px, 0.5vw, 4px);
+}
+
 
 }
 .titulos {
@@ -53,10 +59,10 @@ body {
 /* Texto general */
 .titulo {
   color: yellow;
-  font-size: 1.2rem; /* ya más pequeño */
+  font-size: clamp(0.7rem, 2vw, 1rem);
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
-  max-width: 40%; /* más estrecho para no invadir el centro */
+  max-width: 40%;
   line-height: 1.6;
 }
 
