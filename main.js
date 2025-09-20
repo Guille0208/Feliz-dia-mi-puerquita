@@ -32,3 +32,4 @@ document.addEventListener("click", (e) => {
     setTimeout(() => spark.remove(), 800);
   }
 });
+
