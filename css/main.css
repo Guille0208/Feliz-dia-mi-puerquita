@@ -75,6 +75,31 @@ body {
   text-align: right;
   margin-right: 5%;  /* espacio extra del borde derecho */
 }
+.spark {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: yellow;
+  border-radius: 50%;
+  pointer-events: none;
+  animation: sparkle 600ms ease-out forwards;
+  box-shadow: 0 0 10px 3px rgba(255, 255, 0, 0.7);
+}
+
+@keyframes sparkle {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+}
 
 @keyframes fadeIn {
   from {
