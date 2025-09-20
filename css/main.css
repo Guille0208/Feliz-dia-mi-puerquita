@@ -33,17 +33,16 @@ body {
 @media only screen and (max-width: 600px) {
   /* Estilos específicos para dispositivos con un ancho máximo de 600px */
 #lyrics {
-  font-size: clamp(1rem, 5vw, 1.8rem); 
+  font-size: clamp(1.2rem, 5vw, 2.2rem); 
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: white;
   position: absolute;
   margin-bottom: 20%;
   z-index: 1;
   font-weight: bold;
-  letter-spacing: clamp(2px, 0.5vw, 4px);
+  letter-spacing: clamp(2.5px, 0.8vw, 5px);
 }
-
-
+  
 }
 .titulos {
   width: 100%;
@@ -59,7 +58,7 @@ body {
 /* Texto general */
 .titulo {
   color: yellow;
-  font-size: clamp(0.7rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
   max-width: 40%;
