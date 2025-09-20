@@ -2,18 +2,18 @@ onload = () =>{
     document.body.classList.remove("container");
 };
 document.addEventListener("click", (e) => {
-  for (let i = 0; i < 8; i++) {  // número de chispas por clic
+  for (let i = 0; i < 8; i++) {  
     const spark = document.createElement("div");
     spark.classList.add("spark");
     document.body.appendChild(spark);
 
-    // posición inicial en el clic
-    spark.style.left = `${e.pageX}px`;
-    spark.style.top = `${e.pageY}px`;
+    // posición inicial
+    spark.style.left = `${e.clientX}px`;
+    spark.style.top = `${e.clientY}px`;
 
-    // movimiento aleatorio como fuegos artificiales
+    // dispersión aleatoria
     const angle = Math.random() * 2 * Math.PI;
-    const distance = Math.random() * 80 + 20; // entre 20px y 100px
+    const distance = Math.random() * 80 + 20;
     const x = Math.cos(angle) * distance;
     const y = Math.sin(angle) * distance;
 
@@ -29,7 +29,6 @@ document.addEventListener("click", (e) => {
       }
     );
 
-    // eliminar después de la animación
     setTimeout(() => spark.remove(), 800);
   }
 });
