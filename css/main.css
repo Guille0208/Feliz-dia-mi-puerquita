@@ -41,9 +41,8 @@ body {
   z-index: 1;
   font-weight: bold;
   letter-spacing: clamp(2.5px, 0.8vw, 5px);
-}
+} 
   
-}
 .titulos {
   width: 100%;
   position: absolute;
@@ -58,7 +57,7 @@ body {
 /* Texto general */
 .titulo {
   color: yellow;
-  font-size: clamp(1.4rem, 2.8vw, 1.8rem);
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
   font-weight: bold;
   text-shadow: 0 0 10px rgba(0,0,0,0.7);
   max-width: 40%;
